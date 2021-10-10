@@ -1,0 +1,4 @@
+{
+  "port": 5000,
+  "mongoUri": "mongodb+srv://ismaFront:Fulan272Fulan@cluster0.67iez.mongodb.net/mern?retryWrites=true&w=majority"
+}
