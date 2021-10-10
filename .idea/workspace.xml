@@ -2,8 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29a54e96-db3c-4999-87ed-50be340d95ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/.idea/city-hall-assistant.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/db.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/src/components/App/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/src/components/HomePage/Dashboard/Dashboard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/src/components/HomePage/Map/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/src/components/HomePage/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/src/components/Login/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/src/components/registration/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/src/redux/configureStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/src/redux/ducks/application.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/src/redux/ducks/clients.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../city-hall-assistant/src/redux/ducks/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/.idea/test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/db.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/Components/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/Components/Header/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/Components/Header/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/Components/Main/Currencies/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/Components/Main/HomePage/Converter.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/Components/Main/HomePage/RatesInfo.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/Components/Main/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/Components/Main/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/redux/actions/rate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/redux/configStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/redux/reducers/rate.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,7 +67,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1zIiOrBUG4vK98PBW7i3PpWj8xc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -35,6 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1633841977062</updated>
       <workItem from="1633841978812" duration="350000" />
+      <workItem from="1633842393527" duration="1984000" />
     </task>
     <servers />
   </component>
