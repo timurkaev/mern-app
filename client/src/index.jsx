@@ -1,11 +1,13 @@
 import React from 'react'
-import {render} from 'react-dom';
+import {render} from 'react-dom'
 import './style.less'
-import App from './components/App.jsx'
+import App from './components/App'
+import { Provider } from 'react-redux';
+import {store} from './redux/store.config';
 
 render(
-    <React.Fragment>
+    <Provider store={store}>
       <App />
-    </React.Fragment>,
+    </Provider>,
     document.getElementById('root')
 )
