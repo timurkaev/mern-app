@@ -1,0 +1,19 @@
+{
+  "name": "mern-online-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timurkaev/mern-online-shop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timurkaev/mern-online-shop/issues"
+  },
+  "homepage": "https://github.com/timurkaev/mern-online-shop#readme"
+}
