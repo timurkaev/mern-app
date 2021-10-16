@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/timurkaev/mern-online-shop.git"
@@ -16,7 +14,8 @@
     "url": "https://github.com/timurkaev/mern-online-shop/issues"
   },
   "homepage": "https://github.com/timurkaev/mern-online-shop#readme",
-  "devDependencies": {
-    "concurrently": "^6.3.0"
+  "devDependencies": {},
+  "dependencies": {
+    "axios": "^0.23.0"
   }
 }

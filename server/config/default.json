@@ -1,5 +1,6 @@
 {
   "port": 5000,
   "jwtSecret": "isma front app",
-  "mongoUri": "mongodb+srv://ismaFront:Fulan272Fulan@cluster0.67iez.mongodb.net/mern?retryWrites=true&w=majority"
+  "mongoUri": "mongodb+srv://ismaFront:Fulan272Fulan@cluster0.67iez.mongodb.net/mern?retryWrites=true&w=majority",
+  "secretKey": "mern-isma"
 }

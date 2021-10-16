@@ -1,16 +1,23 @@
-const path = require('path')
-const {CleanWebpackPlugin} = require('clean-webpack-plugin')
-const HTMLWebpackPlugin = require('html-webpack-plugin')
+const path = require("path");
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+
+const isProd = process.env.NODE_ENV === 'production';
+const isDev = !isProd;
+
+const filename = (ext) => isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`
 
 module.exports = {
   mode: 'development',
   entry: ["@babel/polyfill", './src/index.jsx'],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: "[name].[hash].js"
+    filename: filename('js'),
+    publicPath: '/'
   },
   devServer: {
-    port: 3000
+    port: 3000,
+    historyApiFallback: true
   },
   resolve: {
     extensions: ['.js', '.jsx']
@@ -48,7 +55,7 @@ module.exports = {
             presets: ['@babel/preset-react', '@babel/preset-env']
           }
         }
-      }
-    ]
+      },
+    ],
   }
-}
+};
