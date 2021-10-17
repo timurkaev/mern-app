@@ -3,7 +3,7 @@ import Input from '../../../utils/input/Input';
 import './signup.less'
 import { signUp } from '../../../redux/actions/users';
 import {useDispatch, useSelector} from 'react-redux';
-import { useHistory } from 'react-router-dom'
+import {Link, useHistory} from 'react-router-dom';
 
 function SignUp() {
   const [fullName, setFullName] = React.useState('');
@@ -11,14 +11,12 @@ function SignUp() {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
 
-  const history = useHistory()
 
   const loading = useSelector(state => state.users.loading);
-  const error = useSelector(state => state.users.error)
-
-  console.log(error);
-
   const dispatch = useDispatch()
+  const history = useHistory()
+  const error = useSelector(state => state.users.error)
+  const errorMessage = useSelector(state => state.users.errorMessage)
 
   const handleReg = () => {
     dispatch(signUp(fullName, lastName, email, password, history))
@@ -34,11 +32,15 @@ function SignUp() {
         <Input value={email} setValue={setEmail} type="text" placeholder="Введите email..." />
 
         <Input value={password} setValue={setPassword} type="password" placeholder="Введите пароль..." />
+        {error && <div style={{color: '#ff0000'}}>{errorMessage}</div>}
         <button disabled={loading}
                 onClick={handleReg}
                 className="signup__btn">
           Зарегистрироваться
         </button>
+        <Link to={'login'}>
+          <span>У вас есть аккаунт? Войти</span>
+        </Link>
       </div>
   );
 }

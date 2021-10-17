@@ -20,7 +20,7 @@ router.post('/signup',
 
     if (!errors.isEmpty()) {
       return res.status(400).json({
-        message: 'Некорректные данные при регистрации', errors
+        message: 'Проверьте email на корректность. Минимальная длина пароля 6 символов', errors
       })
     }
 
@@ -43,7 +43,7 @@ router.post('/signup',
 
   } catch (e) {
     console.log(e);
-    res.send({ message: 'Что-то пошло не так попробуйте снова епта'})
+    res.send({ message: 'Что-то пошло не так попробуйте снова'})
   }
 });
 

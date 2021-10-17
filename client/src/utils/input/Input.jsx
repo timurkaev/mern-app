@@ -1,4 +1,5 @@
 import React from 'react';
+import './input.less'
 
 function Input(props) {
   return (

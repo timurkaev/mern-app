@@ -20,3 +20,49 @@
     transition: .2s;
   }
 }
+
+@import "../../../utils/colors";
+
+.login {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  margin: 50px auto;
+
+  h1 {
+    text-align: center;
+    color: #333333;
+  }
+
+  .login__btn {
+    height: 50px;
+    background: @btnColors;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: .2s;
+    cursor: pointer;
+    margin: 15px 0 15px 0;
+
+    &:active {
+      background: #0056ba;
+      transition: .2s;
+    }
+    &:disabled {
+      opacity: .5;
+    }
+  }
+}
+
+.logout {
+  background: #b3b3b3;
+  color: #000;
+
+  &:hover {
+    background: #8d8d8d;
+  }
+  &:active {
+    background: #d2d2d2;
+  }
+}
