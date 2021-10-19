@@ -7,6 +7,7 @@ import { login } from '../../../redux/actions/users';
 function LogIn() {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
+  const [showPassword, setShowPassword] = React.useState(false)
 
   const loading = useSelector(state => state.users.loading);
   const error = useSelector(state => state.users.error)
@@ -22,8 +23,17 @@ function LogIn() {
   return (
     <div className="login">
       <h1 className="login__title">Авторизация</h1>
-      <Input value={email} setValue={setEmail} type="text" placeholder="Введите email..." />
-      <Input value={password} setValue={setPassword} type="password" placeholder="Введите пароль..." />
+      <Input value={email} setValue={setEmail} type="email" placeholder="Введите email..." />
+      <div className="auth__password">
+        <Input value={password}
+               setValue={setPassword}
+               type={showPassword ? 'text': 'password'}
+               placeholder="Введите пароль..."
+        />
+          <span onClick={() => setShowPassword(!showPassword)} className="material-icons">
+            {showPassword ? 'visibility' : 'visibility_off'}
+          </span>
+      </div>
       {error && <span style={{color: '#ff0000'}}>{errorMessage}</span>}
       <button
         disabled={loading}

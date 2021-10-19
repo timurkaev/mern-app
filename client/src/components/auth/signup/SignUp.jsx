@@ -10,7 +10,7 @@ function SignUp() {
   const [lastName, setLastName] = React.useState('');
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
-
+  const [showPassword, setShowPassword] = React.useState(false)
 
   const loading = useSelector(state => state.users.loading);
   const dispatch = useDispatch()
@@ -29,9 +29,17 @@ function SignUp() {
           <Input value={fullName} setValue={setFullName} type="text" placeholder="Введите Имя..." />
           <Input value={lastName} setValue={setLastName} type="text" placeholder="Введите фамилию..." />
         </div>
-        <Input value={email} setValue={setEmail} type="text" placeholder="Введите email..." />
-
-        <Input value={password} setValue={setPassword} type="password" placeholder="Введите пароль..." />
+        <Input value={email} setValue={setEmail} type="email" placeholder="Введите email..." />
+        <div className="auth__password">
+          <Input value={password}
+                 setValue={setPassword}
+                 type={showPassword ? 'text': 'password'}
+                 placeholder="Введите пароль..."
+          />
+          <span onClick={() => setShowPassword(!showPassword)} className="material-icons">
+            {showPassword ? 'visibility' : 'visibility_off'}
+          </span>
+        </div>
         {error && <div style={{color: '#ff0000'}}>{errorMessage}</div>}
         <button disabled={loading}
                 onClick={handleReg}
