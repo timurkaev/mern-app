@@ -16,6 +16,6 @@
   "homepage": "https://github.com/timurkaev/mern-online-shop#readme",
   "devDependencies": {},
   "dependencies": {
-    "axios": "^0.23.0"
+
   }
 }
