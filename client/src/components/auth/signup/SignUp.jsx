@@ -14,7 +14,9 @@ function SignUp() {
 
   const loading = useSelector(state => state.users.loading);
   const dispatch = useDispatch()
+
   const history = useHistory()
+  
   const error = useSelector(state => state.users.error)
   const errorMessage = useSelector(state => state.users.errorMessage)
 

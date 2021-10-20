@@ -1,3 +1,6 @@
+const SET_USER = "SET_USER"
+const LOGOUT = 'LOGOUT'
+
 const defaultState = {
   user: {},
   error: false,
@@ -8,30 +11,20 @@ const defaultState = {
 
 export const users = (state = defaultState, action) => {
   switch (action.type) {
-    // case 'user/get/start':
-    //   return {
-    //     ...state,
-    //     loading: true
-    //   }
-
-    case 'user/get/success': 
+    case SET_USER: 
       return {
         ...state,
-        loading: false,
         user: action.payload,
+        isAuth: true
       }
 
-    case 'reg/start':
+      case LOGOUT: 
+      localStorage.removeItem('token')
       return {
         ...state,
-        loading: true
-      };
-    case 'reg/success':
-      return {
-        ...state,
-        loading: false,
-        user: action.payload
-      };
+        user: {},
+        isAuth: false
+      }
 
     case 'reg/error':
       return {
@@ -41,19 +34,6 @@ export const users = (state = defaultState, action) => {
         errorMessage: action.payload
       };
 
-    case 'login/start':
-      return {
-        ...state,
-        loading: true
-      }
-
-    case 'login/success':
-      return {
-        ...state,
-        loading: false,
-        user: action.payload,
-      }
-
     case 'login/error':
       return {
         ...state,
@@ -61,14 +41,10 @@ export const users = (state = defaultState, action) => {
         error: true,
         errorMessage: action.payload,
       }
-
-    case 'logout':
-      localStorage.removeItem('token')
-      return {
-        ...state,
-        user: {},
-      }
-
+      
     default: return state
   }
 };
+
+export const setUser = (user) => ({type: SET_USER, payload: user})
+export const logout = () => ({type: LOGOUT})
