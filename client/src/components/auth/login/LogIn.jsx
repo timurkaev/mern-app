@@ -24,11 +24,11 @@ function LogIn() {
     <div className="login">
       <h1 className="login__title">Авторизация</h1>
       <Input value={email} setValue={setEmail} type="email" placeholder="Введите email..." />
-      <div className="auth__password">
+      <div className="login__password">
         <Input value={password}
-               setValue={setPassword}
-               type={showPassword ? 'text': 'password'}
-               placeholder="Введите пароль..."
+          setValue={setPassword}
+          type={showPassword ? 'text': 'password'}
+          placeholder="Введите пароль..."
         />
           <span onClick={() => setShowPassword(!showPassword)} className="material-icons">
             {showPassword ? 'visibility' : 'visibility_off'}
@@ -43,7 +43,7 @@ function LogIn() {
           Войти
       </button>
       <Link to={'/signup'}>
-        <span>Нет аккаунта, зарегистрируйтесь</span>
+        <span>Нет аккаунта? Зарегистрируйтесь</span>
       </Link>
     </div>
   );

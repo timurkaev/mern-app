@@ -5,7 +5,7 @@ export const signUp = (fullName, lastName, email, password, history) => {
     dispatch({type: 'reg/start'})
 
     try {
-     const response = await axios.post('http://localhost:5000/api/auth/signup', {
+      const response = await axios.post('http://localhost:5000/api/auth/signup', {
         fullName,
         lastName,
         email,
@@ -13,10 +13,9 @@ export const signUp = (fullName, lastName, email, password, history) => {
       }).then((response) => {
         history.push('/login')
         dispatch({
-              type: 'reg/success',
-              payload: response
-            }
-        )
+          type: 'reg/success',
+          payload: response
+        })
         alert(response.data.message)
       })
     } catch (e) {
@@ -55,4 +54,23 @@ export const logOut = () => {
       type: 'logout'
     }
 
+}
+
+export const auth = () => {
+  return async dispatch => {
+    dispatch({
+      type: 'user/get/start',
+    })
+    try {
+      const response = await axios.get('http://localhost:5000/api/auth/auth',
+        {headers:{Authorization: `Bearer ${localStorage.getItem('token')}`}})
+        dispatch({
+          type: 'user/get/success',
+          action: response.data.user
+        })
+      localStorage.setItem('token', response.data.token)
+    } catch(e) {
+      localStorage.removeItem('token')
+    }
+  }
 }

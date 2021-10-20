@@ -23,14 +23,14 @@ function SignUp() {
   }
 
   return (
-      <div className="signUp">
-        <h1 className="signUp__title">Регистрация</h1>
+      <div className="signup">
+        <h1 className="signup__title">Регистрация</h1>
         <div className="signup__name-block">
           <Input value={fullName} setValue={setFullName} type="text" placeholder="Введите Имя..." />
           <Input value={lastName} setValue={setLastName} type="text" placeholder="Введите фамилию..." />
         </div>
         <Input value={email} setValue={setEmail} type="email" placeholder="Введите email..." />
-        <div className="auth__password">
+        <div className="signup__password">
           <Input value={password}
                  setValue={setPassword}
                  type={showPassword ? 'text': 'password'}

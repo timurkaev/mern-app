@@ -9,15 +9,15 @@
   cursor: pointer;
   font-weight: 600;
   background: @btnColors;
-  transition: .2s;
+  transition: 0.2s;
 
   &:hover {
     background: #0056ba;
-    transition: .2s;
+    transition: 0.2s;
   }
   &:active {
     background: #2793ff;
-    transition: .2s;
+    transition: 0.2s;
   }
 }
 
@@ -29,12 +29,12 @@
   width: 480px;
   margin: 50px auto;
 
-  h1 {
+  &__title {
     text-align: center;
     color: #333333;
   }
 
-  .auth__password {
+  &__password {
     position: relative;
     width: 100%;
 
@@ -52,23 +52,23 @@
     }
   }
 
-  .login__btn {
+  &__btn {
     height: 50px;
     background: @btnColors;
     color: #fff;
     font-size: 18px;
     border: none;
     border-radius: 5px;
-    transition: .2s;
+    transition: 0.2s;
     cursor: pointer;
     margin: 15px 0 15px 0;
 
     &:active {
       background: #0056ba;
-      transition: .2s;
+      transition: 0.2s;
     }
     &:disabled {
-      opacity: .5;
+      opacity: 0.5;
     }
   }
 }

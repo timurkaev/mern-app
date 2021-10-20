@@ -1,5 +1,5 @@
 const defaultState = {
-  user: JSON.parse(localStorage.getItem('token')) || {},
+  user: {},
   error: false,
   errorMessage: [],
   loading: false,
@@ -8,6 +8,19 @@ const defaultState = {
 
 export const users = (state = defaultState, action) => {
   switch (action.type) {
+    // case 'user/get/start':
+    //   return {
+    //     ...state,
+    //     loading: true
+    //   }
+
+    case 'user/get/success': 
+      return {
+        ...state,
+        loading: false,
+        user: action.payload,
+      }
+
     case 'reg/start':
       return {
         ...state,
@@ -50,9 +63,10 @@ export const users = (state = defaultState, action) => {
       }
 
     case 'logout':
+      localStorage.removeItem('token')
       return {
         ...state,
-        user: false,
+        user: {},
       }
 
     default: return state

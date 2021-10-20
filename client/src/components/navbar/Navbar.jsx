@@ -6,7 +6,7 @@ import SignInButton from '../auth/login/SignInButton';
 function Navbar() {
   return (
     <div className="header">
-      <div className="header__navbar">
+      <div className="navbar">
         <img className="navbar__apple-logo" src={appleLogo} alt="img"/>
         <ul className="navbar__list">
           <li>Магазин</li>
